@@ -3,7 +3,7 @@ var fs = require('fs')
 var path = require('path')
 var stripBOM = require('strip-bom')
 
-var replCode = fs.readFileSync('./repl.js').toString()
+var replCode = fs.readFileSync(path.join(__dirname, 'repl.js')).toString()
 var file = process.argv[2]
 if (!file) {
   console.error('Usage: node-repl <filename>')
