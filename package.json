@@ -1,0 +1,26 @@
+{
+  "name": "node-repl",
+  "version": "1.0.0",
+  "bin": {
+    "node-repl": "bin.js"
+  },
+  "description": "run a node program but also attach a repl to the same context that your code runs in so you can inspect + mess with stuff as your program is running",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "max ogden",
+  "license": "BSD",
+  "dependencies": {
+    "strip-bom": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxogden/node-repl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/node-repl/issues"
+  },
+  "homepage": "https://github.com/maxogden/node-repl"
+}
