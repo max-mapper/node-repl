@@ -20,7 +20,7 @@ npm install node-repl -g
 $ node-repl
 Usage: node-repl <filename>
 
-$ node-repl foo.js
+$ node-repl your-program.js
 >
 ```
 
@@ -37,7 +37,7 @@ if you run `node-repl hello.js` you will get a repl, just like when you run `nod
 The difference is that this repl is running *in the same context as your program*.
 
 ```
-$ node-repl test.js 
+$ node-repl hello.js 
 > 1 + 1 // we are in a node repl
 2
 > pizza // we can access variables in our program
