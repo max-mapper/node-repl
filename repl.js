@@ -8,8 +8,13 @@
     output: process.stdout,
     eval: function(cmd, context, filename, callback) {
       if (cmd === empty) return callback()
-      var result = eval(cmd)
-      callback(null, result)
+      try {
+        var result = eval(cmd)
+        callback(null, result)
+      }
+      catch (e) {
+        callback(e)
+      }
     }
   })
 })();
