@@ -1,5 +1,4 @@
-
-;(function() {
+;(function(self) {
   var repl = require('repl')
   var os = require('os')
   var empty = '(' + os.EOL + ')'
@@ -9,7 +8,7 @@
     eval: function(cmd, context, filename, callback) {
       if (cmd === empty) return callback()
       try {
-        var result = eval(cmd)
+        var result = eval.call(self, cmd)
         callback(null, result)
       }
       catch (e) {
@@ -17,4 +16,4 @@
       }
     }
   })
-})();
+})(this);
