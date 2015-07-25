@@ -2,7 +2,7 @@
   "name": "node-repl",
   "version": "2.0.2",
   "bin": {
-    "node-repl": "bin.js"
+    "node-repl": "bin-harmonious.js"
   },
   "description": "run a node program but also attach a repl to the same context that your code runs in so you can inspect + mess with stuff as your program is running",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "author": "max ogden",
   "license": "BSD",
   "dependencies": {
+    "harmonious": "^0.5.17",
     "strip-bom": "^1.0.0"
   },
   "devDependencies": {},
